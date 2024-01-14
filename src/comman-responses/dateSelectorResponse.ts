@@ -7,7 +7,6 @@ import { createEmojiArray } from '../utils/emoji';
 const getRoleForActivity = (activityName: string) => {
   switch (activityName) {
     case 'BFD':
-      return 'Minors';
       return '<@&1183772336265121822>';
     default:
       return 'Raiders';
