@@ -7,6 +7,7 @@ import { createEmojiArray } from '../utils/emoji';
 const getRoleForActivity = (activityName: string) => {
   switch (activityName) {
     case 'BFD':
+      return 'Minors';
       return '<@&1183772336265121822>';
     default:
       return 'Raiders';
@@ -21,14 +22,14 @@ const createCoolPost = (activity: Activity, emojiArr: string[]) => {
       switch (activity.name) {
         case 'BFD':
           accumulator.push(
-            `*${getWeekday(dateDay.getDay())}* ${dateDay
+            `__${getWeekday(dateDay.getDay())}__ ${dateDay
               .toLocaleDateString('sv-SE')
               .slice(-5)} 19:00 ${emojiArr[i * activity.timeSlots]}`
           );
           accumulator.push(
-            `*${getWeekday(dateDay.getDay())}* ${dateDay
+            `__${getWeekday(dateDay.getDay())}__ ${dateDay
               .toLocaleDateString('sv-SE')
-              .slice(-5)} 19:15 ${emojiArr[i * activity.timeSlots + 1]}`
+              .slice(-5)} 20:15 ${emojiArr[i * activity.timeSlots + 1]}`
           );
           return accumulator;
         default:
