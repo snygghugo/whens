@@ -22,19 +22,19 @@ const createCoolPost = (activity: Activity, emojiArr: string[]) => {
         case 'BFD':
           accumulator.push(
             `*${getWeekday(dateDay.getDay())}* ${dateDay
-              .toLocaleDateString()
+              .toLocaleDateString('sv-SE')
               .slice(-5)} 19:00 ${emojiArr[i * activity.timeSlots]}`
           );
           accumulator.push(
             `*${getWeekday(dateDay.getDay())}* ${dateDay
-              .toLocaleDateString()
+              .toLocaleDateString('sv-SE')
               .slice(-5)} 19:15 ${emojiArr[i * activity.timeSlots + 1]}`
           );
           return accumulator;
         default:
           accumulator.push(
             `*${getWeekday(dateDay.getDay())}* ${dateDay
-              .toLocaleDateString()
+              .toLocaleDateString('sv-SE')
               .slice(-5)} ${emojiArr[i]}`
           );
           return accumulator;
