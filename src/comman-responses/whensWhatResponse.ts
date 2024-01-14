@@ -19,9 +19,7 @@ const whensWhatResponse = async (interaction: StringSelectMenuInteraction) => {
     select.addOptions(
       new StringSelectMenuOptionBuilder()
         .setLabel(
-          `${getWeekday(weekday.getDay())} ${weekday
-            .toLocaleDateString()
-            .slice(-5)}`
+          `${getWeekday(weekday.getDay())} ${weekday.toLocaleDateString()}`
         )
         .setValue(JSON.stringify(selectedActivity))
     );
