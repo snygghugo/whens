@@ -8,7 +8,6 @@ import { createWeek, getWeekday } from '../utils/dateHelpers';
 // https://discord.com/oauth2/authorize?client_id=1192467608088367246&permissions=0&scope=bot
 const whensWhatResponse = async (interaction: StringSelectMenuInteraction) => {
   const currentDate = new Date();
-  console.log('det här är currentDate', currentDate);
   const weekArray = createWeek(currentDate);
   const select = new StringSelectMenuBuilder()
     .setCustomId('dateSelector')

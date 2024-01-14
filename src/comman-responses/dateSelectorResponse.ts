@@ -48,7 +48,7 @@ const createCoolPost = (activity: Activity, emojiArr: string[]) => {
     applicableDaysToString.join('\n') +
     '\n' +
     '\n' +
-    'Click all the dates you are available';
+    'Click all the dates you are available!';
 
   return coolPost;
 };
