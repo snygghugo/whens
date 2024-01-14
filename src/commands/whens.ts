@@ -32,8 +32,5 @@ export const execute = async (interaction: CommandInteraction) => {
     components: [whensWhatRow],
     fetchReply: true,
   });
-  setTimeout(() => {
-    response.delete();
-  }, 5 * 60 * 1000);
   return;
 };
