@@ -12,4 +12,5 @@ export const activities = {
     timeSlots: 2,
   },
   loa: { name: 'Lost Ark Raids', cycle: 7, timeSlots: 1 },
+  sunken: { name: 'Sunken Temple', cycle: 7, timeSlots: 1 },
 };

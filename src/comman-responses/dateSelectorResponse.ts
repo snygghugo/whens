@@ -6,6 +6,7 @@ import { createEmojiArray } from '../utils/emoji';
 
 const getRoleForActivity = (activityName: string) => {
   switch (activityName) {
+    case 'Sunken Temple':
     case 'BFD':
       return '<@&1183772336265121822>';
     default:
